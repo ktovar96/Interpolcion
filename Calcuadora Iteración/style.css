@@ -1,0 +1,14 @@
+body {
+    margin: 0%;
+    background-color: gray;
+}
+
+button{
+    background: transparent;
+    color: black;
+    border-color: blueviolet;
+}
+
+table{
+    background: lightcyan;
+}

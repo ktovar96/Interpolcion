@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Iteración</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <center>
+        <div id= "centro">
+            <center><h1>Solución de Ecuaciones No Lineales</h1></center>
+    <table border=1>
+        <tbody>
+        <tr>
+            <td><h2><center>Titulo </center></h2></td>
+            <td><h2><center>Método de la Secante</center></h2></td>
+        </tr>
+        <tr>
+            <td>
+            <table border=1>
+                <tbody> 
+                <tr>
+                    <td>x1: </td>
+                    <td> <input id="inpx1" type="number"> </td>
+                </tr>
+                <tr>
+                    <td>x2: </td>
+                    <td> <input id="inpx2" type="number"> </td>
+                </tr>
+                <tr>
+                    <td>fx1: </td>
+                    <td> <input id="inpfx" type="number"> </td>
+                </tr>
+                <tr>
+                    <td>fx2: </td>
+                    <td> <input id="inpfx2" type="number"> </td>
+                </tr>
+                <tr>
+                    <td>% de error:</td>
+                    <td> <input id="inperror" type="number"> </td>
+                </tr>
+                <tr>
+                    <td><center>Xm:</center></td>
+                    <td><center>% errores:</center></td>
+                </tr>
+                <tr>
+                    <td><output id= "xM"></output></td>
+                    <td><output id= "error"></output></td>
+                </tr>
+                <tr>
+                    <td><center><button onclick= "interpolacionCuadratica()" name="Button1"> Obtener </button></center></td>
+                    <td><center><button onclick= "clear()" name="Button2"> Limpiar Valores </button></center></td>
+                </tr>
+            </tbody>
+            </table>
+            </td>
+            <td>
+            <table border=1>
+                <tbody> 
+                <tr>
+                    <td>x0: </td>
+                    <td> <input id="inpx01" type="number"> </td>
+                </tr>
+                <tr>
+                    <td>x1: </td>
+                    <td> <input id="inpx11" type="number"> </td>
+                </tr>
+                <tr>
+                    <td>fx0: </td>
+                    <td> <input id="inpfx01" type="number"> </td>
+                </tr>
+                <tr>
+                    <td>fx1: </td>
+                    <td> <input id="inpfx11" type="number"> </td>
+                </tr>
+                <tr>
+                    <td>% de error:</td>
+                    <td> <input id="inperror1" type="number"> </td>
+                </tr>
+                <tr>
+                    <td><center>Xm:</center></td>
+                    <td><center>% errores:</center></td>
+                </tr>
+                <tr>
+                    <td><output id= "xM1"></output></td>
+                    <td><output id= "error1"></output></td>
+                </tr>
+                <tr>
+                    <td><center><button onclick= "secante()" name="Button3"> Obtener </button></center></td>
+                    <td><center><button onclick= "clear1()" name="Button4"> Limpiar Valores </button></center></td>
+                </tr>
+            </tbody>
+            </table>
+    </tbody>
+    </table>
+</center>
+    <script type="application/javascript" src="main.js"></script>
+</body>
+</html>
